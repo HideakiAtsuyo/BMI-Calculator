@@ -2,13 +2,12 @@
 
 //Includes
 #include <iostream>
-#include <math.h>
 #include <format>
 
 //Variables
 std::string name;
 int age;
-double height, weight, heighResult, imc;
+double height, weight, imc;
 
 std::string getResult(double imc);
 double fix(double x);
@@ -28,8 +27,7 @@ int main()
 	std::cin >> weight;
 
 	//Calculation
-	heighResult = height * height;
-	imc = fix(weight / (pow(height, 2) / 10000));
+	imc = fix(weight / (height * height / 10000));
 
 	std::cout << std::format("Your BMI is {}{}", imc, getResult(imc)) << std::endl;
 	system("pause");
