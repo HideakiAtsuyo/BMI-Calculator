@@ -37,7 +37,7 @@ int main()
 
 double fix(double x) {
 	std::string imcFixed = std::to_string(x);
-	imcFixed.erase(imcFixed.begin() + 5);
+	imcFixed.erase(imcFixed.begin() + 5, imcFixed.end());
 	return std::stod(imcFixed);
 
 }
