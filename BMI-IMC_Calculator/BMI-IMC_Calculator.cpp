@@ -29,7 +29,7 @@ int main()
 	//Calculation
 	imc = fix(weight / (height * height / 10000));
 
-	std::cout << std::format("Your BMI is {}{}", imc, getResult(imc)) << std::endl;
+	std::cout << std::format("Hi {} ! You are {} years old and your BMI is {}{}", name, age, imc, getResult(imc)) << std::endl;
 	system("pause");
 }
 
